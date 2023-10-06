@@ -3,43 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hutc0116 HTML Assignment</title>
+    <!--Website title-->
+    <title>
+        hutc0116 HTML Assignment
+    </title>
 </head>
 <body>
     <header>
+        <!--Page title-->
         <h1>
-            <!--Page title-->
             Lucy Hutchings
         </h1>
+        <!--Navigation-->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="notes.html">Notes</a>
+        </nav>
     </header>
     <main>
-        <article>
+        <p>
+            Welcome to my home page!
+            <br>Click <a href="#extra">here</a> to go to the "Extra Info" section!
+        </p>
+        <hr>
+        <article id="about">
+            <!--Article title-->
             <h2>
-                <!--Article title-->
                 About Me
             </h2>
+            <!--Photograph-->
+            <img title="A photograph of me" src="images/lucy_photo.jpg" alt="Photograph of Lucy Hutchings" width="200">
+            <!--Motivational quote and citation-->
+            <blockquote>
+                <em>"To err is human, to really foul things up requires a computer."</em><cite> - <strong>Bill Vaughan</strong></cite>
+            </blockquote>
+            <!--About Me part one-->
             <p>
-                <!--About me part one-->
                 I was born in Nottingham, England on the 15<sup>th</sup> of November, 1996 and immigrated to Canada with my family in 1998.
                 <br> I went to <abbr title="South Carleton High School">SCHS</abbr> and graduated in 2014 with an <abbr title="Information and Communications Technology">ICT</abbr> <abbr title="Specialist High Skills Major">SHSM</abbr> diploma.
                 <br> I studied Animation at Algonquin from September 2014 until December 2019 after dropping out of first year once and failing second year twice.
                 <br> I currently live with my twin sister in a house previously owned by our late father in Kanata. 
             </p>
+            <!--About Me part two-->
             <p>
-                <!--About me part two-->
-                I love drawing and animating. I also enjoy playing video games and listening to music. Art is important to me and a lot of my hobbies and interests revolve around it. 
-                <br> I was recommended this program by a friend who'd graduated from it earlier this year, and I decided to enroll because this program seemed to blend creative and technical work together in a way that interested me. 
+                I was recommended this program by a friend who'd graduated from it earlier this year, and I decided to enroll because this program seemed to blend creative and technical work together in a way that interested me. 
                 <br>I hope that I can graduate from this program and be able to secure a job using the skills I've learned during my time here.
             </p>
-            <blockquote>
-                <!--Motivational quote and citation-->
-                <em>"To err is human, to really foul things up requires a computer."</em><cite> - <strong>Bill Vaughan</strong></cite>
-            </blockquote>
+            <!--About Me part three-->
+            <p>
+                I love drawing and animating. I also enjoy playing video games and listening to music. Art is important to me and a lot of my hobbies and interests revolve around it.
+            </p>
+            <p>
+                Some of my favourite video games are:
+            </p>
+            <ul>
+                <li>Silent Hill 2</li>
+                <li>Elden Ring</li>
+                <li>Team Fortress 2</li>
+            </ul>
+            <p>
+                And here's my top three bands:
+            </p>
+            <ol>
+                <li>Radiohead</li>
+                <li>Queens of the Stone Age</li>
+                <li>Gorillaz</li>
+            </ol>
         </article>
         <!--Extra info-->
         <hr>
         <aside>
-            <article>
+            <article id="extra">
                 <h2>
                     Extra Info
                 </h2>
@@ -49,27 +83,26 @@
                 </p> 
                 <p>
                     A little info about him:
-                    <dl>
-                        <dt><strong>Name</strong></dt>
-                        <dd>Smough</dd>
-                  
-                        <dt><strong>Age</strong></dt>
-                        <dd>~10 years old</dd>
-
-                        <dt><strong>Weight</strong></dt>
-                        <dd><del datetime="Tuesday, September 26th, 2023 @ 7:00pm">28lbs</del> 24lbs and dropping!</dd>
-                    </dl>
-                    Once I learn how to add photos to my webpages I will upload a photo of him onto one of them.
                 </p>
+                <dl>
+                    <dt><strong>Name</strong></dt>
+                    <dd>Smough</dd>
+                    <dt><strong>Age</strong></dt>
+                    <dd>~10 years old</dd>
+                    <dt><strong>Weight</strong></dt>
+                    <dd><del datetime="Tuesday, September 26th, 2023 @ 7:00pm">28lbs</del> 23lbs and dropping!</dd>
+                </dl>
+                <img title="A photograph of Smough" src="images/smough_photo.jpg" alt="Photograph of Smough the cat" height="200">
             </article>
         </aside>
         <hr>
         <p>
-            Thanks for reading!
+            Thanks for reading! 
+            <br> Click <a href="#about">here</a> to go back up to the "About Me" section!
         </p>
     </main>
     <footer>
-        <!--Add copyright here-->
+        <!--Copyright information-->
         &copy; Lucy Hutchings 2023
     </footer>
 </body>
