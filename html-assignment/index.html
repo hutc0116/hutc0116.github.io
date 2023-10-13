@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="css/main.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Website title-->
@@ -11,7 +12,7 @@
 <body>
     <header>
         <!--Page title-->
-        <h1>
+        <h1 class="site-title">
             Lucy Hutchings
         </h1>
         <!--Navigation-->
@@ -34,7 +35,7 @@
                 About Me
             </h2>
             <!--Photograph-->
-            <img title="A photograph of me" src="images/lucy_photo.jpg" alt="Photograph of Lucy Hutchings" width="200">
+            <img id="my-image" title="A photograph of me" src="images/lucy_photo.jpg" alt="Photograph of Lucy Hutchings" width="200">
             <!--Motivational quote and citation-->
             <blockquote>
                 <em>"To err is human, to really foul things up requires a computer."</em><cite> - <strong>Bill Vaughan</strong></cite>
@@ -86,15 +87,24 @@
                 <p>
                     A little info about him:
                 </p>
-                <dl>
-                    <dt><strong>Name</strong></dt>
-                    <dd>Smough</dd>
-                    <dt><strong>Age</strong></dt>
-                    <dd>~10 years old</dd>
-                    <dt><strong>Weight</strong></dt>
-                    <dd><!--<del datetime="2023-09-26 19:00">28lbs</del>--><del datetime="2023-09-26T23:24:39Z">28lbs</del> 23lbs and dropping!</dd>
-                </dl>
-                <img title="A photograph of Smough" src="images/smough_photo.jpg" alt="Photograph of Smough the cat" height="200">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Weight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Smough</td>
+                            <td>10 years old</td>
+                            <td><del datetime="2023-09-26T23:24:39Z">28lbs</del> 23lbs and dropping!</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <img id="smough-image" title="A photograph of Smough" src="images/smough_photo.jpg" alt="Photograph of Smough the cat" height="200">
             </article>
         </aside>
         <hr>

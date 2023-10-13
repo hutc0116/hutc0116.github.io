@@ -1,0 +1,83 @@
+/*Styling for main content*/
+body{
+    background-color:#FFF6E4;
+    color:#282B2F;
+    font-family:Arial,Helvetica,sans-serif;
+    font-size:18px;
+}
+a{
+    color:black;
+}
+a:hover{
+    color:#C8797A;
+}
+ul{
+    list-style-type:square;
+}
+ol{
+    list-style-type:upper-roman;
+}
+li:nth-child(odd){
+    background-color:#C8797A;
+}
+dt{
+    font-weight:bold;
+    margin-top:5px;
+}
+th{
+    padding:5px;
+}
+td{
+    padding:5px;
+}
+table,th,td{
+    border:1px solid black;
+}
+header,footer{
+    background-color:#67606A;
+    padding:5px;
+}
+nav ul{
+    list-style-type:none;
+    text-align:center;
+    margin:0px;
+    padding:0px;
+    width:100px;
+}
+nav li{
+    margin-bottom:5px;
+}
+nav a{
+    display:block;
+    text-decoration:none;
+    background-color:#A5AFAE;
+    border:1px solid black;
+}
+nav a:hover{
+    background-color:#E1D4BC;
+}
+/*Styling for classes*/
+.site-title{
+    color:#E1D4BC;
+    margin:0px;
+    padding:5px;
+}
+/*Styling for IDs*/
+#about{
+    background-color:#E1D4BC;
+    margin:10px;
+    padding:10px;
+}
+#extra{
+    background-color:#A5AFAE;
+    margin:10px;
+    padding:10px;
+}
+#my-image,#smough-image{
+    box-shadow: 0px 0px 2px 1px black;
+}
+#notes{
+    background-color:#C8797A;
+    margin:10px;
+    padding:10px;
+}
