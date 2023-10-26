@@ -1,0 +1,64 @@
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background-color:#aad4cf;
+}
+nav{
+    font-size:0px; /*Removes invisible space between inline block elements*/
+    text-align:center;
+}
+nav ul{
+    list-style-type:none;
+}
+nav li{
+    display:inline-block;
+    width:33%;
+}
+nav li:not(:last-child){
+    border-right:1px solid black;
+}
+nav a{
+    font-size:16px;
+    display:inline;
+    color:black;
+    text-decoration:none;    
+}
+nav a:hover{
+    color:white;
+}
+main{
+    padding:10px;
+}
+footer{
+    text-align:right;
+}
+.wrapper{
+    background-color:#d4e9e7;
+    max-width:1024px;
+    margin:auto;
+}
+.banner{
+    font-size:0px; /*Removes invisible space under banner image*/
+    position:relative;
+}
+.banner img{
+    max-width:100%;
+}
+.banner h1{
+    font-size:20px;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.float img{
+    float:left;
+    height:auto;
+    width:200px;
+    margin-right:10px;
+}
+.clearfix::after{
+    clear:both;
+    display:block;
+    content:"";
+}
