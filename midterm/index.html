@@ -64,21 +64,25 @@
                     Contact to learn more
                 </h4>
                 <form action="thanks.html" method="post">
-                    <label for="fullname">Your Name</label>
-                    <input id="fullname" type="text" name="fullname" required>
-                    <label for="email">Your Email</label>
-                    <input id="email" type="email" name="email" required>
-                    <label for="message">Your Message</label>
-                    <textarea id="message" type="text" name="message" required></textarea>
+                    <div class="textform">
+                        <label for="fullname">Your Name</label>
+                        <input id="fullname" type="text" name="fullname" required>
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" name="email" required>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" type="text" name="message" required></textarea>
+                    </div>
                     <h5>
                         Would you like to visit the starfish?
                     </h5>
-                    <label for="agree">Yes</label>
-                    <input type="radio" id="agree" name="visit" value="yes" required>
-                    <label for="disagree">No</label>
-                    <input type="radio" id="disagree" name="visit" value="no" required>
-                    <label for="unsure">Maybe</label>
-                    <input type="radio" id="unsure" name="visit" value="maybe" required>
+                    <div class="radioform">
+                        <label for="agree">Yes</label>
+                        <input type="radio" id="agree" name="visit" value="yes" required>
+                        <label for="disagree">No</label>
+                        <input type="radio" id="disagree" name="visit" value="no" required>
+                        <label for="unsure">Maybe</label>
+                        <input type="radio" id="unsure" name="visit" value="maybe" required>
+                    </div>
                     <button type="submit">Send</button>
                 </form>
             </section>

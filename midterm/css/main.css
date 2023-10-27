@@ -1,64 +1,95 @@
-body{
+body{ /*rem = default 16px*/
     font-family:Arial,Helvetica,sans-serif;
     background-color:#aad4cf;
 }
+h1{
+    font-size:2rem; /*32px*/
+    color:white;
+}
+h2{
+    font-size:1.75rem;
+}
+h3,h4,h5{
+    font-size:1.25rem;
+}
 nav{
-    font-size:0px; /*Removes invisible space between inline block elements*/
+    font-size:0rem; /*Removes invisible space between inline block elements*/
     text-align:center;
 }
 nav ul{
-    list-style-type:none;
+    margin:10px;
 }
 nav li{
-    display:inline-block;
-    width:33%;
+    font-size:1.2rem; /*20px - Adds back font size removed in nav styling*/
+    display:inline-block; /**/
+    width:33%; /*Makes list items take up a third of the wrapper size (three list items divided equally = 1/3rd each)*/
 }
-nav li:not(:last-child){
+nav li:not(:last-child){ /*Adds a border to the right of all inline elements except for the last one*/
     border-right:1px solid black;
 }
 nav a{
-    font-size:16px;
-    display:inline;
     color:black;
-    text-decoration:none;    
+    text-decoration:none;
+    text-transform:uppercase;
 }
 nav a:hover{
     color:white;
 }
 main{
+    margin:10px;
+}
+article h2{
+    margin-bottom:10px;
+}
+article h3,h4,h5{
+    margin:10px 0px;
+}
+form{
     padding:10px;
+    border:1px solid black;
+}
+form button{
+    margin-top:10px;
 }
 footer{
+    padding-bottom:10px;
+    margin:10px;
     text-align:right;
 }
+/*Classes*/
 .wrapper{
     background-color:#d4e9e7;
-    max-width:1024px;
-    margin:auto;
+    max-width:1024px; /*Wrapper's max size = full-sized banner image*/
+    margin:auto; /*Centers wrapper in webpage window*/
 }
 .banner{
-    font-size:0px; /*Removes invisible space under banner image*/
+    font-size:0rem; /*Removes invisible space under banner image*/
     position:relative;
 }
-.banner img{
-    max-width:100%;
+.banner img{ /*Original size = 1024px*/
+    max-width:100%; /*Takes up full size of wrapper*/
 }
 .banner h1{
-    font-size:20px;
-    color:white;
-    position:absolute;
+    position:absolute; /*Spaces headline in relation to banner*/
     top:50%;
     left:50%;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%); /*Properly centers title inside banner*/
 }
 .float img{
-    float:left;
+    float:left; /*Allows text to wrap around the right side of the image*/
     height:auto;
-    width:200px;
-    margin-right:10px;
+    width:40%; /*Shrinks image from original 600px to 240px*/
+    margin:0px 10px 10px 0px;
 }
-.clearfix::after{
+.clearfix::after{ /*Clears float styling for anything after clearfix-classified divs*/
     clear:both;
     display:block;
     content:"";
+}
+.textform label{
+    display:block;
+    margin-bottom:10px;
+}
+.textform label:not(:first-child){
+    margin:10px 0px;
 }
