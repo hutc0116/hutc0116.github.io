@@ -1,28 +1,29 @@
-body{ /*rem = default 16px*/
+body{/*rem = default 16px*/
     font-family:Arial,Helvetica,sans-serif;
     background-color:#aad4cf;
 }
 h1{
-    font-size:2rem; /*32px*/
+    font-size:2rem;/*32px*/
     color:white;
 }
 h2{
-    font-size:1.75rem;
+    font-size:1.75rem;/*28px*/
 }
 h3,h4,h5{
-    font-size:1.25rem;
+    font-size:1.25rem;/*20px*/
 }
 nav{
-    font-size:0rem; /*Removes invisible space between inline block elements*/
+    font-size:0rem;/*Removes invisible space between inline block elements*/
     text-align:center;
 }
 nav ul{
     margin:10px;
 }
 nav li{
-    font-size:1.2rem; /*20px - Adds back font size removed in nav styling*/
-    display:inline-block; /**/
-    width:33%; /*Makes list items take up a third of the wrapper size (three list items divided equally = 1/3rd each)*/
+    word-wrap:break-word;
+    font-size:1.25rem;/*20px - Adds back font size removed in nav styling*/
+    display:inline-block;
+    width:33%;/*Makes list items take up a third of the wrapper size (three list items divided equally = ~1/3rd each)*/
 }
 nav li:not(:last-child){ /*Adds a border to the right of all inline elements except for the last one*/
     border-right:1px solid black;
@@ -44,11 +45,17 @@ article h2{
 article h3,h4,h5{
     margin:10px 0px;
 }
+article ul{
+    list-style-type:disc;
+    margin-left:10px;
+    font-size:1rem;
+}
 form{
     padding:10px;
     border:1px solid black;
 }
 form button{
+    display:block;
     margin-top:10px;
 }
 footer{
@@ -63,7 +70,8 @@ footer{
     margin:auto; /*Centers wrapper in webpage window*/
 }
 .banner{
-    font-size:0rem; /*Removes invisible space under banner image*/
+    font-size:0rem;/*Removes invisible space under banner image*/
+    text-align:center;
     position:relative;
 }
 .banner img{ /*Original size = 1024px*/
@@ -78,7 +86,7 @@ footer{
 .float img{
     float:left; /*Allows text to wrap around the right side of the image*/
     height:auto;
-    width:40%; /*Shrinks image from original 600px to 240px*/
+    width:214px;
     margin:0px 10px 10px 0px;
 }
 .clearfix::after{ /*Clears float styling for anything after clearfix-classified divs*/
@@ -92,4 +100,13 @@ footer{
 }
 .textform label:not(:first-child){
     margin:10px 0px;
+}
+.textform input, textarea{
+    width:100%;
+    box-sizing:border-box;
+    resize:none;
+    border: 1px solid black;
+}
+.textform input, textarea:focus{
+    outline:none;
 }
