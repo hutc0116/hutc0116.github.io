@@ -17,13 +17,14 @@ nav{
     text-align:center;
 }
 nav ul{
-    margin:10px;
+    margin:10px 0px;
 }
 nav li{
     word-wrap:break-word;
     font-size:1.5rem; /*20px - Adds back font size removed in nav styling*/
     display:inline-block;
-    width:33%; /*Makes list items take up a third of the wrapper size (three list items divided equally = ~1/3rd each)*/
+    width:33%; /*Makes each list item take up roughly a third of the wrapper size*/
+    padding:10px 0px;
 }
 nav li:not(:last-child){ /*Adds a border to the right of all inline elements except for the last one*/
     border-right:1px solid black;
@@ -43,10 +44,10 @@ main{
     margin:10px;
 }
 article h2{
-    margin-bottom:10px;
+    margin:20px 0px 10px 0px;
 }
 article h3,h4,h5{
-    margin:10px 0px;
+    margin:20px 0px 10px 0px;
 }
 article p{
     line-height:1.5em;
@@ -63,21 +64,22 @@ form{
     border:1px solid black;
 }
 form label{
-    font-size:1rem;
+    font-size:1.25rem;
     margin:0px 10px;
 }
 form input{
     margin:0px;
     padding:0px;
+    accent-color:black;
 }
 form button{
-    font-size:1rem;
+    font-size:1.25rem;
     background-color:#d4e9e7;
     padding:10px;
     border:1px solid black;
     margin:0px;
     display:block;
-    margin-top:10px;
+    margin-top:20px;
 }
 form button:hover{
     background-color:#aad4cf;
@@ -124,7 +126,6 @@ footer{
     content:"";
 }
 .textform label{
-    font-size:1rem;
     display:block;
     margin:0px 0px 10px 0px;
 }
