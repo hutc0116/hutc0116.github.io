@@ -63,7 +63,7 @@
                 <h4>
                     Contact to learn more
                 </h4>
-                <form action="contact.html" method="post"> <!--Sends information submited in form to contact page privately (NOTE: Couldn't get contact page to work when clicking send - How does this work?)-->
+                <form action="/contact.html" method="get" enctype="text/plain"> <!--Sends information submited in form to contact page privately (NOTE: Couldn't get contact page to work when using method="post")-->
                     <div class="textform"> <!--Separated the from into two sections so styling each would be easier-->
                         <label for="fullname">Your Name</label>
                         <input id="fullname" type="text" name="fullname" required>
