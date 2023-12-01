@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"><!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
     <title>Final Project HTML</title>
 </head>
 <body>
-    <div class="wrapper"><!--Container for all content-->
-        <header><!--Logo, navigation, and search bar-->
+    <header>
+        <div class="wrapper">
             <img src="images/logo.png" alt="Three Star Media logo">
             <nav>
                 <ul>
@@ -32,7 +32,7 @@
                 <div class="searchbar">
                     <form>
                         <input name ="search" type="text" placeholder="Search">
-                        <button type="submit">
+                        <button class="button1" id="buttonsearch" type="submit">
                             <span class="material-symbols-outlined">
                             search
                             </span>
@@ -40,7 +40,7 @@
                     </form>
                 </div>
             </nav>
-            <div class="banner" id="welcome"><!--Container for main site banner. NOTE: Banner image may be a background?-->
+            <div class="banner" id="welcome">
                 <img src="images/main-banner.jpg" alt="Photo of office">
                 <h1>
                     Welcome to Three Star Media
@@ -48,212 +48,229 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis voluptatem, sit exercitationem rerum consequatur suscipit accusamus! Quas sapiente provident deserunt! Similique aspernatur cupiditate porro, sed vitae earum aut molestiae.
                 </p>
-                Connect with us
-                <span class="material-symbols-outlined">
-                    arrow_right
-                </span>
+                <!--put in button maybe?-->
+                <button class="button2" id="buttonconnect" type="button">
+                    Connect with us
+                    <span class="material-symbols-outlined">
+                        arrow_right
+                    </span>
+                </button>
             </div>
-        </header>
-        <main>
-            <article id="about">
-                <img src="images/about-us.jpg" alt="Photo of employee lounge with ping-pong table">
-                <h2>
-                    About Us
-                </h2>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <img src="images/about-us.jpg" alt="Photo of employee lounge with ping-pong table">
+            <h2>
+                About Us
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro unde in id nesciunt optio doloremque et aspernatur rerum earum beatae, consequatur dolor libero ab accusamus ipsum aliquid quam mollitia.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsum dicta alias, quisquam nemo repellendus repellat voluptatibus, facere quidem sapiente perferendis nostrum inventore accusamus ullam maiores dolores. Totam, itaque sed.
+            </p>
+        </section>
+        <section id="services">
+            <h2>
+                Our Services
+            </h2>
+            <article class="service" id="digital">
+                <img src="images/digital.jpg" alt="Photo of employee working at laptop">
+                <h3>
+                    Digital Transformation
+                </h3>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro unde in id nesciunt optio doloremque et aspernatur rerum earum beatae, consequatur dolor libero ab accusamus ipsum aliquid quam mollitia.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas necessitatibus numquam impedit ut, nostrum hic architecto molestias totam distinctio asperiores accusantium doloremque consequuntur consectetur quos sit illum nobis, laborum neque.
                 </p>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsum dicta alias, quisquam nemo repellendus repellat voluptatibus, facere quidem sapiente perferendis nostrum inventore accusamus ullam maiores dolores. Totam, itaque sed.
-                </p>
-            </article>
-            <article id="services"><!--Article with multiple sub-sections-->
-                <h2>
-                    Our Services
-                </h2>
-                <section class="service" id="digital">
-                    <img src="images/digital.jpg" alt="Photo of employee working at laptop">
-                    <h3>
-                        Digital Transformation
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas necessitatibus numquam impedit ut, nostrum hic architecto molestias totam distinctio asperiores accusantium doloremque consequuntur consectetur quos sit illum nobis, laborum neque.
-                    </p>
+                <button class="button2" id="buttondigital" type="button">
                     Digital Plans
                     <span class="material-symbols-outlined">
                         arrow_right
                     </span>
-                </section>
-                <section class="service" id="marketing">
-                    <img src="images/marketing.jpg" alt="Photo of laptop showing graph">
-                    <h3>
-                        Marketing
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi ipsum eveniet nostrum obcaecati sequi, rem dignissimos itaque veritatis iste assumenda dolor quisquam amet non quasi et exercitationem. Eos, tempore!
-                    </p>
+                </button>
+            </article>
+            <article class="service" id="marketing">
+                <img src="images/marketing.jpg" alt="Photo of laptop showing graph">
+                <h3>
+                    Marketing
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima commodi ipsum eveniet nostrum obcaecati sequi, rem dignissimos itaque veritatis iste assumenda dolor quisquam amet non quasi et exercitationem. Eos, tempore!
+                </p>
+                <button class="button2" id="buttonmarketing" type="button">
                     Marketing Plans
                     <span class="material-symbols-outlined">
                         arrow_right
                     </span>
-                </section>
-                <section class="service" id="video">
-                    <img src="images/video.jpg" alt="Photo of phone showing video player">
-                    <h3>
-                        Video Production
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, amet. Repellendus, modi mollitia. Esse nesciunt aut repellat quibusdam tempore nam, voluptatum rerum quam ipsum odit facilis officiis obcaecati temporibus eum.
-                    </p>
+                </button>
+            </article>
+            <article class="service" id="video">
+                <img src="images/video.jpg" alt="Photo of phone showing video player">
+                <h3>
+                    Video Production
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, amet. Repellendus, modi mollitia. Esse nesciunt aut repellat quibusdam tempore nam, voluptatum rerum quam ipsum odit facilis officiis obcaecati temporibus eum.
+                </p>
+                <button class="button2" id="buttonvideo" type="button">
                     Video Plans
                     <span class="material-symbols-outlined">
                         arrow_right
                     </span>
-                </section>
-                <section class="service" id="web">
-                    <img src="images/web.jpg" alt="Photo of phone on notebook">
-                    <h3>
-                        Web Development
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero, minima repudiandae iure impedit maxime dicta illo porro dolorum voluptatum aliquam perspiciatis explicabo recusandae veritatis voluptatem nisi atque doloribus esse.
-                    </p>
+                </button>
+            </article>
+            <article class="service" id="web">
+                <img src="images/web.jpg" alt="Photo of phone on notebook">
+                <h3>
+                    Web Development
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vero, minima repudiandae iure impedit maxime dicta illo porro dolorum voluptatum aliquam perspiciatis explicabo recusandae veritatis voluptatem nisi atque doloribus esse.
+                </p>
+                <button class="button2" id="buttonweb" type="button">
                     Web Plans
                     <span class="material-symbols-outlined">
                         arrow_right
                     </span>
-                </section>
-                <section class="service" id="print">
-                    <img src="images/print.jpg" alt="Photo of newspaper boxes on sidewalk">
-                    <h3>
-                        Print
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur necessitatibus provident maxime. Rerum quasi laborum eos dolorem corrupti magnam deleniti perspiciatis assumenda, tempore aliquam, magni nemo cum ratione sequi omnis!
-                    </p>
+                </button>
+            </article>
+            <article class="service" id="print">
+                <img src="images/print.jpg" alt="Photo of newspaper boxes on sidewalk">
+                <h3>
+                    Print
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur necessitatibus provident maxime. Rerum quasi laborum eos dolorem corrupti magnam deleniti perspiciatis assumenda, tempore aliquam, magni nemo cum ratione sequi omnis!
+                </p>
+                <button class="button2" id="buttonprint" type="button">
                     Print Plans
                     <span class="material-symbols-outlined">
                         arrow_right
                     </span>
-                </section>
+                </button>
             </article>
-            <aside class="banner" id="vision"><!--Second banner-->
-                <img src="images/vision.jpg" alt="Photo of origami boats on blue surface">
-                <h3>
-                    Our Vision
-                </h3>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolore cupiditate placeat debitis, eveniet explicabo natus adipisci saepe officia atque nostrum aliquid nobis magnam quis suscipit soluta animi repellendus cum?
-                </p>
+        </section>
+        <div class="banner" id="vision">
+            <img src="images/vision.jpg" alt="Photo of origami boats on blue surface">
+            <h3>
+                Our Vision
+            </h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure dolore cupiditate placeat debitis, eveniet explicabo natus adipisci saepe officia atque nostrum aliquid nobis magnam quis suscipit soluta animi repellendus cum?
+            </p>
+            <button class="button2" id="buttonlearn" type="button">
                 Learn More
                 <span class="material-symbols-outlined">
                     arrow_right
                 </span>
-            </aside>
-            <article id="team">
-                <h2>
-                    Our Team
-                </h2>
-                <section class="employee" id="johndoe">
-                    <img src="images/john.jpg" alt="Photo of John Doe">
-                    <h3>
-                        John Doe
-                    </h3>
-                    <h4>
-                        CEO and Co-owner
-                    </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse magnam illum facere odio eum dicta, a nisi nemo ipsa soluta mollitia. Expedita, error consequuntur. Culpa obcaecati voluptate sit aspernatur.
-                    </p>
-                </section>
-                <section class="employee" id="bobrite">
-                    <img src="images/bob.jpg" alt="Photo of Bob Rite">
-                    <h3>
-                        Bob Rite
-                    </h3>
-                    <h4>
-                        CFO and Co-owner
-                    </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, totam autem tempora et libero ea neque alias reiciendis animi aspernatur dolor illo dolorem cumque similique blanditiis hic eveniet. Quae, officiis!
-                    </p>
-                </section>
+            </button>
+        </div>
+        <section id="team">
+            <h2>
+                Our Team
+            </h2>
+            <article class="employee" id="johndoe">
+                <img src="images/john.jpg" alt="Photo of John Doe">
+                <h3>
+                    John Doe
+                </h3>
+                <h4>
+                    CEO and Co-owner
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non esse magnam illum facere odio eum dicta, a nisi nemo ipsa soluta mollitia. Expedita, error consequuntur. Culpa obcaecati voluptate sit aspernatur.
+                </p>
             </article>
-            <article id="contact">
-                <h2>
-                    Contact Us
-                </h2>
-                <section class="contactinfo" id="contactmessage">
-                    <h3>
-                        Send us a message
-                    </h3>
-                    <form action="/contact.html" method="get" enctype="text/plain">
-                        <label for="fullname">
-                            Full Name
-                        </label>
-                        <input id="fullname" type="text" name="fullname" required>
-                        <label for="email">
-                            Email
-                        </label>
-                        <input id="email" type="email" name="email" required>
-                        <label for="message">
-                            Message
-                        </label>
-                        <textarea id="message" name="message" rows="5" required>
-                        </textarea>
-                        <button type="submit">
-                            Send
-                        </button>
-                    </form>
-                </section>
-                <section class="contactinfo" id="contacthours">
-                    <h3>
-                        Hours of operation
-                    </h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>
-                                    Days
-                                </th>
-                                <th>
-                                    Hours
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    Monday - Friday
-                                </td>
-                                <td>
-                                    9 AM - 6 PM
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Saturday - Sunday
-                                </td>
-                                <td>
-                                    Closed
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </section>
-                <section class="contactinfo" id="contactlocation">
-                    <h3>
-                        Location
-                    </h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156962!2d-75.7549257!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701384452415!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
-                </section>
+            <article class="employee" id="bobrite">
+                <img src="images/bob.jpg" alt="Photo of Bob Rite">
+                <h3>
+                    Bob Rite
+                </h3>
+                <h4>
+                    CFO and Co-owner
+                </h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, totam autem tempora et libero ea neque alias reiciendis animi aspernatur dolor illo dolorem cumque similique blanditiis hic eveniet. Quae, officiis!
+                </p>
             </article>
-        </main>
-        <footer>
+        </section>
+        <section id="contact">
+            <h2>
+                Contact Us
+            </h2>
+            <article class="contactinfo" id="contactmessage">
+                <h3>
+                    Send us a message
+                </h3>
+                <form action="/contact.html" method="get" enctype="text/plain">
+                    <label for="fullname">
+                        Full Name
+                    </label>
+                    <input id="fullname" type="text" name="fullname" required>
+                    <label for="email">
+                        Email
+                    </label>
+                    <input id="email" type="email" name="email" required>
+                    <label for="message">
+                        Message
+                    </label>
+                    <textarea id="message" name="message" rows="5" required>
+                    </textarea>
+                    <button class="button1" id="buttonsend" type="submit">
+                        Send
+                    </button>
+                </form>
+            </article>
+            <article class="contactinfo" id="contacthours">
+                <h3>
+                    Hours of operation
+                </h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Days
+                            </th>
+                            <th>
+                                Hours
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Monday - Friday
+                            </td>
+                            <td>
+                                9 AM - 6 PM
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Saturday - Sunday
+                            </td>
+                            <td>
+                                Closed
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="contactinfo" id="contactlocation">
+                <h3>
+                    Location
+                </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156962!2d-75.7549257!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701384452415!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
             &copy; Copyright Three Star Media, 2023
             <br>All images are taken from <a href="https://unsplash.com" target="_blank">Unsplash</a>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
