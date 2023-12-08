@@ -1,0 +1,71 @@
+/* #c78c06 = Gold */
+/* #ffe6ac = Cream */
+/* #222 = Black */
+/* white = White */
+body{
+    font-family:"Open Sans";
+}
+header{
+    background-color:#222;
+}
+header img{
+    background-color:#c78c06;
+}
+nav{
+    font-size:0rem; /*Removes invisible space between inline block elements*/
+    text-align:center;
+}
+nav li{
+    font-size:1rem;
+}
+nav a{
+    color:#c78c06;
+    text-decoration:none;
+}
+nav a:hover{
+    color:#222;
+}
+nav a:active{
+    color:white;
+}
+form{
+    font-size:0rem; /*Removes invisible space at bottom of form*/
+}
+footer{
+    background-color:#222;   
+}
+/*Classes*/
+.wrapper{
+    max-width:1200px;
+    margin:auto;
+    background-color:pink;
+}
+.searchbar form{
+    display:inline-block;
+    padding:0px;
+}
+.searchbar input{
+    box-sizing:border-box;
+    height:30px;
+    padding:0px;
+    border:1px solid grey;
+}
+.searchbar button{
+    box-sizing:border-box;
+    float:right;
+    color:#c78c06;
+    background-color:#222;
+    height:30px;
+    padding:0px;
+    border:1px solid #c78c06;
+}
+/*IDs*/
+#about{
+    background-color:#ffe6ac;
+}
+#contactmessage form label{
+    font-size:1rem;
+}
+/*Media Queries*/
+@media only screen and (min-width:760px){ /*Changes for screens 760px and larger*/
+}
