@@ -5,6 +5,40 @@
 body{
     font-family:"Open Sans";
 }
+h1, h2, h3, h4{
+    font-weight:bold;
+}
+h1{
+    font-size:4rem;
+    color:white;
+}
+h2{
+    font-size:3rem;
+    color:#222;
+}
+h3{
+    font-size:2rem;
+}
+h4{
+    font-size:1.25rem;
+    border-bottom:1px solid #c78c06;
+}
+form{
+    font-size:0rem; /*Removes invisible space at bottom of form*/
+    padding:0px;
+    margin:0px;
+}
+input{
+    padding:0px;
+    margin:0px;
+}
+button{
+    display:flex;
+    align-items:center;
+    padding:0px;
+    border:none;
+    margin:0px;
+}
 header{
     background-color:#222;
 }
@@ -28,9 +62,6 @@ nav a:hover{
 nav a:active{
     color:white;
 }
-form{
-    font-size:0rem; /*Removes invisible space at bottom of form*/
-}
 footer{
     background-color:#222;   
 }
@@ -38,28 +69,51 @@ footer{
 .wrapper{
     max-width:1200px;
     margin:auto;
-    background-color:pink;
+}
+.button1{
+    box-sizing:border-box;
+    background-color:#222;
+    color:#c78c06;
+    border:1px solid #c78c06;
+}
+.button2{
+    box-sizing:border-box;
+    background-color:#222;
+    color:white;
+    padding:10px;
 }
 .searchbar form{
     display:inline-block;
-    padding:0px;
+    width:100%;
 }
 .searchbar input{
     box-sizing:border-box;
     height:30px;
-    padding:0px;
     border:1px solid grey;
+    width:100%;
 }
-.searchbar button{
-    box-sizing:border-box;
-    float:right;
-    color:#c78c06;
-    background-color:#222;
-    height:30px;
-    padding:0px;
-    border:1px solid #c78c06;
+.banner{
+    font-size:0rem; /*Removes invisible space under banner image*/
 }
+.banner h3, .banner p{
+    color:white;
+}
+.banner h1{
+    font-size:4rem;
+}
+.banner p{
+    font-size:1rem;
+}
+
 /*IDs*/
+#buttonconnect{
+    color:#222;
+    background-color:#c78c06;
+}
+#buttonlearn{
+    background-color:rgb(33, 33, 33, 0.75);
+    border:1px solid #c78c06; 
+}
 #about{
     background-color:#ffe6ac;
 }
