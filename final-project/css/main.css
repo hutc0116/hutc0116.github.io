@@ -3,7 +3,9 @@
 /* #222 = Black */
 /* white = White */
 body{
+    font-size:16px; /*rem = 16px*/
     font-family:"Open Sans";
+    background-color:white;
 }
 img{
     width:100%;
@@ -13,19 +15,19 @@ h1, h2, h3, h4{
     font-weight:bold;
 }
 h1{
-    font-size:4rem;
+    font-size:5rem; /*80px*/
     color:white;
 }
 h2{
-    font-size:3rem;
+    font-size:3.5rem; /*56px*/
     color:#222;
 }
 h3{
-    font-size:2rem;
+    font-size:2.25rem; /*36px*/
 }
 h4{
-    font-size:1.25rem;
-    border-bottom:1px solid #c78c06;
+    /* font-size:1.125rem; 18px */
+    border-bottom:4px solid #c78c06;
 }
 form{
     font-size:0rem; /*Removes invisible space at bottom of form*/
