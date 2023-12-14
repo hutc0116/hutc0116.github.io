@@ -5,6 +5,10 @@
 body{
     font-family:"Open Sans";
 }
+img{
+    width:100%;
+    height:auto;
+}
 h1, h2, h3, h4{
     font-weight:bold;
 }
@@ -39,11 +43,21 @@ button{
     border:none;
     margin:0px;
 }
+thead{
+    background-color:#ffe6ac;
+}
+th{
+    border:1px solid #222;
+}
+td{
+    border:1px solid #222;
+}
 header{
     background-color:#222;
 }
 header img{
     background-color:#c78c06;
+    max-width:98px;
 }
 nav{
     font-size:0rem; /*Removes invisible space between inline block elements*/
@@ -63,7 +77,11 @@ nav a:active{
     color:white;
 }
 footer{
+    color:#c78c06;
     background-color:#222;   
+}
+footer a{
+    color:#c78c06;
 }
 /*Classes*/
 .wrapper{
@@ -104,7 +122,10 @@ footer{
 .banner p{
     font-size:1rem;
 }
-
+.service, .employee{
+    background-color:#ffe6ac;
+    margin-bottom:10px;
+}
 /*IDs*/
 #buttonconnect{
     color:#222;
