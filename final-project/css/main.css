@@ -3,7 +3,7 @@
 /* #222 = Black */
 /* white = White */
 body{
-    font-size:16px; /*rem = 16px*/
+    font-size:30px; /*rem = 30px*/
     font-family:"Open Sans";
     background-color:white;
 }
@@ -33,6 +33,9 @@ form{
     font-size:0rem; /*Removes invisible space at bottom of form*/
     padding:0px;
     margin:0px;
+}
+label{
+    font-size:1rem; /*Reinstates font size removed in form*/
 }
 input{
     padding:0px;
@@ -66,7 +69,7 @@ nav{
     text-align:center;
 }
 nav li{
-    font-size:1rem;
+    font-size:1rem; /*Reinstates font size removed in nav*/
 }
 nav a{
     color:#c78c06;
@@ -89,6 +92,8 @@ footer a{
 .wrapper{
     max-width:1200px;
     margin:auto;
+    padding:28px;
+    font-size:1rem; /*Fixes weird font size issues*/
 }
 .button1{
     box-sizing:border-box;
@@ -122,11 +127,13 @@ footer a{
     font-size:4rem;
 }
 .banner p{
-    font-size:1rem;
+    font-size:1rem; /*Reinstates font size removed in banner*/
 }
 .service, .employee{
     background-color:#ffe6ac;
-    margin-bottom:10px;
+}
+.articletext{
+    padding:28px;
 }
 /*IDs*/
 #buttonconnect{
@@ -139,9 +146,6 @@ footer a{
 }
 #about{
     background-color:#ffe6ac;
-}
-#contactmessage form label{
-    font-size:1rem;
 }
 /*Media Queries*/
 @media only screen and (min-width:760px){ /*Changes for screens 760px and larger*/

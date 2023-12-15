@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=Open+Sans"> <!--Google font link-->
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Thasadith:wght@400;700&display=swap"> <!--Google font link-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"> <!--Google icons link-->
     <title>Final Project HTML</title>
 </head>
@@ -49,18 +49,20 @@
     <main> <!--Middle page content - Includes main banner, about, services, team, and contact sections-->
         <div class="banner" id="welcome"> <!--Main banner-->
             <img src="images/main-banner.jpg" title="Three Star Media office" alt="Photo of employees working at computers in a sunny office">
-            <h1>
-                Welcome to Three Star Media
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis voluptatem, sit exercitationem rerum consequatur suscipit accusamus! Quas sapiente provident deserunt! Similique aspernatur cupiditate porro, sed vitae earum aut molestiae.
-            </p>
-            <button class="button2" id="buttonconnect" type="button">
-                Connect with us
-                <span class="material-symbols-outlined"> <!--Google icon-->
-                    arrow_right
-                </span>
-            </button>
+            <div class="wrapper"> <!--Container for content-->
+                <h1>
+                    Welcome to Three Star Media
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis voluptatem, sit exercitationem rerum consequatur suscipit accusamus! Quas sapiente provident deserunt! Similique aspernatur cupiditate porro, sed vitae earum aut molestiae.
+                </p>
+                <button class="button2" id="buttonconnect" type="button">
+                    Connect with us
+                    <span class="material-symbols-outlined"> <!--Google icon-->
+                        arrow_right
+                    </span>
+                </button>
+            </div>
         </div>
         <section id="about"> <!--Company information-->
             <div class="wrapper"> <!--Container for content-->
@@ -83,18 +85,20 @@
                 </h2>
                 <article class="service" id="digital"> <!--Digital services-->
                     <img src="images/digital.jpg" title="Three Star Media employee at work" alt="Photo of an employee working at a laptop holding a phone">
-                    <h3>
-                        Digital Transformation
-                    </h3>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas necessitatibus numquam impedit ut, nostrum hic architecto molestias totam distinctio asperiores accusantium doloremque consequuntur consectetur quos sit illum nobis, laborum neque.
-                    </p>
-                    <button class="button2" id="buttondigital" type="button">
-                        Digital Plans
-                        <span class="material-symbols-outlined"> <!--Google icon-->
-                            arrow_right
-                        </span>
-                    </button>
+                    <div class="articletext">
+                        <h3>
+                            Digital Transformation
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas necessitatibus numquam impedit ut, nostrum hic architecto molestias totam distinctio asperiores accusantium doloremque consequuntur consectetur quos sit illum nobis, laborum neque.
+                        </p>
+                        <button class="button2" id="buttondigital" type="button">
+                            Digital Plans
+                            <span class="material-symbols-outlined"> <!--Google icon-->
+                                arrow_right
+                            </span>
+                        </button>
+                    </div>
                 </article>
                 <article class="service" id="marketing"> <!--Marketing services-->
                     <img src="images/marketing.jpg" title="Three Star Media marketing example" alt="Photo of an employee laptop showing a marketing graph">
