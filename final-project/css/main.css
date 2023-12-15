@@ -14,17 +14,19 @@ h1, h2, h3, h4{
     font-weight:bold;
 }
 h1{
-    font-size:5rem; /*80px*/
-    line-height:7.5rem;
+    font-size:4rem; /*80px*/
+    line-height:6rem; /*Spaces out text*/
     color:white;
     margin:28px 0px;
 }
 h2{
-    font-size:3.5rem; /*56px*/
+    font-size:3rem; /*56px*/
     color:#222;
+    margin:28px 0px;
 }
 h3{
     font-size:2.25rem; /*36px*/
+    margin:28px 0px;
 }
 h4{
     font-size:1.125rem; /*18px*/
@@ -33,7 +35,7 @@ h4{
 form{
     font-size:0rem; /*Removes invisible space at bottom of form*/
     padding:0px;
-    margin:0px;
+    margin:14px 0px;
 }
 label{
     font-size:1rem; /*16px - Reinstates font size removed in form*/
@@ -51,13 +53,18 @@ button{
     border:none;
     margin:0px;
 }
+table{
+    width:100%;
+}
 thead{
     background-color:#ffe6ac;
 }
 th{
+    padding:14px;
     border:1px solid #222;
 }
 td{
+    padding:14px;
     border:1px solid #222;
 }
 header{
@@ -88,10 +95,13 @@ nav a:active{ /*Changes on link click*/
 }
 footer{
     color:#c78c06;
-    background-color:#222;   
+    background-color:#222; 
 }
 footer a{
     color:#c78c06;
+}
+footer p{
+    margin-top:28px; /*Spaces paragraphs appart*/
 }
 /*Classes*/
 .wrapper{
@@ -123,7 +133,7 @@ footer a{
 }
 .searchbar input{
     width:100%; /*Makes searchbar take up entire width of nav*/
-    font-size:1.25rem; /*20px*/
+    font-size:1rem; /*16px*/
     padding:14px;
     border:2px solid grey;
     border-radius:4px; /*Rounds searchbar corners*/
@@ -147,21 +157,44 @@ footer a{
 .articletext{
     padding:14px;
 }
+.service:not(:last-child){ /*Adds margin to bottom of employee sections except for last one*/
+    margin-bottom:14px;
+}
+.employee:not(:last-child){ /*Adds margin to bottom of employee sections except for last one*/
+    margin-bottom:14px;
+}
 /*IDs*/
-#welcome{
+#welcome, #vision{
     position:relative; /*Readys banner for welcometext content*/
     display:flex;
     justify-content:center; /*Centers content vertically*/
     align-items:center; /*Centers content horizontally*/
 }
-#welcome .wrapper{
-    background-color:rgb(33, 33, 33, 0.75); /*Adds semi-transparent background to wrapper content*/
+
+#welcome .wrapper, #vision .wrapper{
     position:absolute; /*Places welcometext content over banner*/
     display:flex;
     flex-direction:column;
     align-items:flex-start; /*Places welcometext items left horizontally*/
 }
+#welcome img{
+    height:600px; /*Constrains image height*/
+    object-fit:cover; /*Preserves image ratio*/
+}
+#welcome .wrapper{
+    background-color:rgb(33, 33, 33, 0.75); /*Adds semi-transparent background to wrapper content*/
+}
 #welcome p{
+    margin:14px 0px;
+}
+#vision img{
+    height:293.45px; /*Constrains image to banner height*/
+    object-fit:cover; /*Preserves image ratio*/
+}
+#about p{
+    margin:14px 0px;
+}
+#team h3, p{
     margin:14px 0px;
 }
 #buttonsearch{
@@ -180,6 +213,20 @@ footer a{
 }
 #about{
     background-color:#ffe6ac;
+}
+#contact button{
+    margin-top:28px;
+}
+#contactmessage label{
+    display:block;
+    margin:14px 0px;
+}
+#contactmessage input, textarea{
+    font-size:1rem;
+    width:100%;
+    box-sizing:border-box;
+    resize:none; /*Removes resizing ability for textarea*/
+    padding:14px;
 }
 /*Media Queries*/
 @media only screen and (min-width:760px){ /*Changes for screens 760px and larger*/
