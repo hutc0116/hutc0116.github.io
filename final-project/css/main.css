@@ -134,8 +134,15 @@ footer a{
 }
 /*IDs*/
 #welcome{
+    position:relative;
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+}
+#welcome .wrapper{
+    background-color:rgb(33, 33, 33, 0.75);
+    position:absolute;
 }
 #buttonconnect{
     color:#222;
