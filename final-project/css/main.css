@@ -2,8 +2,7 @@
 /* #ffe6ac = Cream */
 /* #222 = Black */
 /* white = White */
-body{
-    font-size:30px; /*rem = 30px*/
+body{ /*1rem = 16px by default*/
     font-family:"Open Sans";
     background-color:white;
 }
@@ -16,7 +15,9 @@ h1, h2, h3, h4{
 }
 h1{
     font-size:5rem; /*80px*/
+    line-height:7.5rem;
     color:white;
+    margin:28px 0px;
 }
 h2{
     font-size:3.5rem; /*56px*/
@@ -26,7 +27,7 @@ h3{
     font-size:2.25rem; /*36px*/
 }
 h4{
-    font-size:1.125rem;
+    font-size:1.125rem; /*18px*/
     border-bottom:2px solid #c78c06;
 }
 form{
@@ -35,13 +36,14 @@ form{
     margin:0px;
 }
 label{
-    font-size:1rem; /*Reinstates font size removed in form*/
+    font-size:1rem; /*16px - Reinstates font size removed in form*/
 }
 input{
     padding:0px;
     margin:0px;
 }
 button{
+    font-family:"Open Sans";
     display:flex;
     justify-content:center;
     align-items:center;
@@ -67,13 +69,13 @@ nav{
     text-align:center;
 }
 nav li{
-    font-size:1rem; /*Reinstates font size removed in nav*/
+    font-size:1rem; /*16px - Reinstates font size removed in nav*/
 }
 nav a{
     display:block; /*Makes link take up entire nav width*/
     color:#c78c06;
     text-decoration:none; /*Removes underline*/
-    padding:28px;
+    padding:14px;
 }
 nav a:hover{ /*Changes on link hover*/
     color:#222;
@@ -81,6 +83,8 @@ nav a:hover{ /*Changes on link hover*/
 }
 nav a:active{ /*Changes on link click*/
     color:white;
+    background-color:#222;
+    border:1px solid #c78c06;
 }
 footer{
     color:#c78c06;
@@ -93,40 +97,39 @@ footer a{
 .wrapper{
     max-width:1200px;
     margin:auto;
-    padding:28px;
-    font-size:1rem; /*Fixes weird font size issues*/
+    padding:14px;
 }
 .logo{
     font-size:0rem; /*Removes invisible space below logo*/
     background-color:#c78c06;
+    padding:14px 0px;
 }
 .logo img{
-    max-width:200px;
+    max-width:100px;
 }
 .button1{
-    box-sizing:border-box;
+    font-size:1.5rem; /*24px*/
     background-color:#222;
     color:#c78c06;
-    border:2px solid #c78c06;
 }
 .button2{
+    font-size:1.5rem; /*24px*/
     background-color:#222;
     color:white;
-    padding:10px;
+    padding:24px;
 }
 .searchbar form{
-    width:100%;
     display:flex; /*Places searchbar and search button next to eachother*/
 }
 .searchbar input{
-    height:80px;
-    width:100%;
-    font-size:1.25rem;
+    width:100%; /*Makes searchbar take up entire width of nav*/
+    font-size:1.25rem; /*20px*/
+    padding:14px;
     border:2px solid grey;
     border-radius:4px; /*Rounds searchbar corners*/
 }
 .material-symbols-outlined{
-    font-size:4rem!important; /*Overrides default font sizing*/
+    font-size:3rem!important; /*64px - Overrides default font sizing*/
     font-variation-settings:'GRAD' 200; /*Thickens symbol*/
 }
 .banner{
@@ -136,28 +139,33 @@ footer a{
     color:white;
 }
 .banner p{
-    font-size:1rem; /*Reinstates font size removed in banner*/
+    font-size:1rem; /*16px - Reinstates font size removed in banner*/
 }
 .service, .employee{
     background-color:#ffe6ac;
 }
 .articletext{
-    padding:28px;
+    padding:14px;
 }
 /*IDs*/
 #welcome{
-    position:relative; /*Readys banner for wrapper content*/
+    position:relative; /*Readys banner for welcometext content*/
     display:flex;
-    flex-direction:column;
-    justify-content:center; /*Centers text vertically*/
-    align-items:flex-start; /*Places text left horizontally*/
+    justify-content:center; /*Centers content vertically*/
+    align-items:center; /*Centers content horizontally*/
 }
 #welcome .wrapper{
     background-color:rgb(33, 33, 33, 0.75); /*Adds semi-transparent background to wrapper content*/
-    position:absolute; /*Places wrapper content over banner*/
+    position:absolute; /*Places welcometext content over banner*/
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start; /*Places welcometext items left horizontally*/
+}
+#welcome p{
+    margin:14px 0px;
 }
 #buttonsearch{
-    width:76px;
+    border:2px solid #c78c06;
 }
 #buttonconnect{
     color:#222;
@@ -166,6 +174,9 @@ footer a{
 #buttonlearn{
     background-color:rgb(33, 33, 33, 0.75); /*Adds semi-transparent background to button*/
     border:1px solid #c78c06; 
+}
+#buttonsend{
+    padding:7px;
 }
 #about{
     background-color:#ffe6ac;
