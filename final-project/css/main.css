@@ -26,8 +26,8 @@ h3{
     font-size:2.25rem; /*36px*/
 }
 h4{
-    /* font-size:1.125rem; 18px */
-    border-bottom:4px solid #c78c06;
+    font-size:1.125rem;
+    border-bottom:2px solid #c78c06;
 }
 form{
     font-size:0rem; /*Removes invisible space at bottom of form*/
@@ -123,9 +123,6 @@ footer a{
 .banner h3, .banner p{
     color:white;
 }
-.banner h1{
-    font-size:4rem;
-}
 .banner p{
     font-size:1rem; /*Reinstates font size removed in banner*/
 }
@@ -136,6 +133,10 @@ footer a{
     padding:14px;
 }
 /*IDs*/
+#welcome{
+    display:flex;
+    flex-wrap:wrap;
+}
 #buttonconnect{
     color:#222;
     background-color:#c78c06;
