@@ -43,6 +43,7 @@ input{
 }
 button{
     display:flex;
+    justify-content:center;
     align-items:center;
     padding:0px;
     border:none;
@@ -60,11 +61,8 @@ td{
 header{
     background-color:#222;
 }
-header img{
-    background-color:#c78c06;
-    max-width:98px;
-}
 nav{
+    background-color:#222;
     font-size:0rem; /*Removes invisible space between inline block elements*/
     text-align:center;
 }
@@ -72,13 +70,16 @@ nav li{
     font-size:1rem; /*Reinstates font size removed in nav*/
 }
 nav a{
+    display:block; /*Makes link take up entire nav width*/
     color:#c78c06;
-    text-decoration:none;
+    text-decoration:none; /*Removes underline*/
+    padding:28px;
 }
-nav a:hover{
+nav a:hover{ /*Changes on link hover*/
     color:#222;
+    background-color:#c78c06;
 }
-nav a:active{
+nav a:active{ /*Changes on link click*/
     color:white;
 }
 footer{
@@ -92,30 +93,41 @@ footer a{
 .wrapper{
     max-width:1200px;
     margin:auto;
-    padding:14px;
+    padding:28px;
     font-size:1rem; /*Fixes weird font size issues*/
+}
+.logo{
+    font-size:0rem; /*Removes invisible space below logo*/
+    background-color:#c78c06;
+}
+.logo img{
+    max-width:200px;
 }
 .button1{
     box-sizing:border-box;
     background-color:#222;
     color:#c78c06;
-    border:1px solid #c78c06;
+    border:2px solid #c78c06;
 }
 .button2{
-    box-sizing:border-box;
     background-color:#222;
     color:white;
     padding:10px;
 }
 .searchbar form{
-    display:inline-block;
     width:100%;
+    display:flex; /*Places searchbar and search button next to eachother*/
 }
 .searchbar input{
-    box-sizing:border-box;
-    height:30px;
-    border:1px solid grey;
+    height:80px;
     width:100%;
+    font-size:1.25rem;
+    border:2px solid grey;
+    border-radius:4px; /*Rounds searchbar corners*/
+}
+.material-symbols-outlined{
+    font-size:4rem!important; /*Overrides default font sizing*/
+    font-variation-settings:'GRAD' 200; /*Thickens symbol*/
 }
 .banner{
     font-size:0rem; /*Removes invisible space under banner image*/
@@ -130,26 +142,29 @@ footer a{
     background-color:#ffe6ac;
 }
 .articletext{
-    padding:14px;
+    padding:28px;
 }
 /*IDs*/
 #welcome{
-    position:relative;
+    position:relative; /*Readys banner for wrapper content*/
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    align-items:flex-start;
+    justify-content:center; /*Centers text vertically*/
+    align-items:flex-start; /*Places text left horizontally*/
 }
 #welcome .wrapper{
-    background-color:rgb(33, 33, 33, 0.75);
-    position:absolute;
+    background-color:rgb(33, 33, 33, 0.75); /*Adds semi-transparent background to wrapper content*/
+    position:absolute; /*Places wrapper content over banner*/
+}
+#buttonsearch{
+    width:76px;
 }
 #buttonconnect{
     color:#222;
     background-color:#c78c06;
 }
 #buttonlearn{
-    background-color:rgb(33, 33, 33, 0.75);
+    background-color:rgb(33, 33, 33, 0.75); /*Adds semi-transparent background to button*/
     border:1px solid #c78c06; 
 }
 #about{
