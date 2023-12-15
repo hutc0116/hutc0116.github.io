@@ -92,7 +92,7 @@ footer a{
 .wrapper{
     max-width:1200px;
     margin:auto;
-    padding:28px;
+    padding:14px;
     font-size:1rem; /*Fixes weird font size issues*/
 }
 .button1{
@@ -133,7 +133,7 @@ footer a{
     background-color:#ffe6ac;
 }
 .articletext{
-    padding:28px;
+    padding:14px;
 }
 /*IDs*/
 #buttonconnect{
